@@ -1,0 +1,22 @@
+#ifndef ROCK_H
+#define ROCK_H
+#include "staticgameentity.h"
+
+class rock : public StaticGameEntity{
+    
+private: 
+    
+    int m_sharpness;
+    
+public:
+    
+    Rock(int sharpness) : StaticGameEntity(){
+        
+    }
+    
+    
+    int getSharpness() const;
+    void setSharpness(int newSharpness);
+};
+
+#endif // ROCK_H
