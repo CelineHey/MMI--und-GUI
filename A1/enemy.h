@@ -9,7 +9,7 @@ private:
     double m_damagePerAttak;
 
 public:
-    Enemy(double damagePerAttak) : DynamicGameEntity(lifepoints){
+    Enemy(int lifepoints, double damagePerAttak) : DynamicGameEntity(lifepoints){
 
     }
 
