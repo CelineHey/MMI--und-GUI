@@ -16,6 +16,9 @@ public:
 
     }
 
+    int getNumberOfBookPages();
+    void setNumberOfBookPages(int numberOfBookPages);
+
 };
 
 #endif // BOOK_H

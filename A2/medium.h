@@ -14,6 +14,9 @@ public:
 
     }
 
+    char getName();
+    void setName(char name[]);
+
 };
 
 #endif // MEDIUM_H
