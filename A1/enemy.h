@@ -1,6 +1,6 @@
 #ifndef ENEMY_H
 #define ENEMY_H
-#include "dynamicgameentity"
+#include "dynamicgameentity.h"
 
 class Enemy : public DynamicGameEntity{
 
