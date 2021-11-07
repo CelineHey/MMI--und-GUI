@@ -1,6 +1,7 @@
 #ifndef ROCK_H
 #define ROCK_H
 #include <stdbool.h>
+#include "staticgameentity.h"
 
 class Rock : public StaticGameEntity{
 
@@ -10,7 +11,7 @@ private:
 
 public:
 
-    Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestoryable){
+    Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestroyable){
 
     }
 
