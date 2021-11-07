@@ -3,5 +3,5 @@
 
 Rock::Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestroyable){
 
-    m_sharpness = sharpness
+
 }

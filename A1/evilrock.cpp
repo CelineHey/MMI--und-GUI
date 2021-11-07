@@ -6,6 +6,9 @@
 
 EvilRock::EvilRock(int sharpness, double damagePerAttak) : Rock(sharpness) : Enemy(damagePerAttak += sharpness){
 
+
+
+
 }
 
 #endif // EVILROCK_H
