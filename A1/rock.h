@@ -10,7 +10,7 @@ private:
 
 public:
 
-    Rock(int sharpness, bool destroy) : StaticGameEntity(destory){
+    Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestoryable){
 
     }
 

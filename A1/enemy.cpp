@@ -1,7 +1,7 @@
 #include "enemy.h"
 #include "dynamicgameentity.h"
 
-Enemy::Enemy(double damagePerAttak) : DynamicGameEntity(lifepoints), m_damagePerAttak(damagePerAttak){
+Enemy::Enemy(int lifepoints, double damagePerAttak) : DynamicGameEntity(lifepoints), m_damagePerAttak(damagePerAttak){
 
 
 }
