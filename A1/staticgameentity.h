@@ -3,7 +3,7 @@
 #include "gameentity.h"
 
 
-class StaticGameEntity : public GameEntity
+class StaticGameEntity : public virtual GameEntity
 {
 
 protected:

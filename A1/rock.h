@@ -5,20 +5,24 @@
 
 
 
-class Rock : public StaticGameEntity{
+class Rock : public virtual StaticGameEntity{
 
-private:
+protected:
     int m_sharpness;
 
 
 public:
 
-    Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestroyable){
+    Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestroyable), m_sharpness(sharpness){
 
     }
 
-    int getSharpness();
-    void setSharpness(int sharpness);
+    int getSharpness(){
+        return m_sharpness;
+    }
+    void setSharpness(int sharpness){
+        m_sharpness = sharpness;
+    }
 };
 
 #endif // ROCK_H

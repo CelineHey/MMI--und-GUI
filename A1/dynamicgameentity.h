@@ -2,7 +2,7 @@
 #define DYNAMICGAMEENTITY_H
 #include "gameentity.h"
 
-class DynamicGameEntity : public GameEntity
+class DynamicGameEntity : public virtual GameEntity
 {
 
 protected:

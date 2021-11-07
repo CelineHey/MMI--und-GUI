@@ -4,11 +4,13 @@
 
 class Player : public DynamicGameEntity{
 
+    friend class game;
+
 private:
     int const constValue;
 
 public:
-    Player(int const constValue, int lifepoints ) : DynamicGameEntity(lifepoints){
+    Player(int const constValue, int lifepoints ) : DynamicGameEntity(lifepoints), constValue(constValue) {
 
     }
 
