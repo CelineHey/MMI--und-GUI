@@ -4,10 +4,8 @@
 #include "rock.h"
 #include "enemy.h"
 
-class EvilRock : virtual public Rock, public Enemy{
+EvilRock::EvilRock(int sharpness, double damagePerAttak) : Rock(sharpness) : Enemy(damagePerAttak += sharpness){
 
-
-
-};
+}
 
 #endif // EVILROCK_H
