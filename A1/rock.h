@@ -1,11 +1,9 @@
 #ifndef ROCK_H
 #define ROCK_H
 #include <stdbool.h>
-<<<<<<< HEAD
 #include "staticgameentity.h"
-=======
-#include "
->>>>>>> fee68e4972bde7fe4dbe3cb7e4512f3ec4625018
+
+
 
 class Rock : public StaticGameEntity{
 
