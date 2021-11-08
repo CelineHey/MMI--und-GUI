@@ -11,6 +11,7 @@ protected:
 
 public:
     StaticGameEntity(string name, Vector2 position, bool isDestroyable);
+    ~StaticGameEntity();
     bool getIsDestroyable() const{
         return m_isDestroyable;
     }

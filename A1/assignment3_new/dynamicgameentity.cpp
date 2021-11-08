@@ -5,3 +5,6 @@ DynamicGameEntity::DynamicGameEntity(string name, Vector2 position, int lifepoin
 
 }
 
+DynamicGameEntity :: ~ DynamicGameEntity(){
+
+}

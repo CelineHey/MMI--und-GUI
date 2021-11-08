@@ -3,12 +3,11 @@
 #include "staticgameentity.h"
 #include <iostream>
 
-class Tree : public StaticGameEntity {
+class Tree : public  StaticGameEntity {
 
 public:
-    Tree(bool isDestroyable): StaticGameEntity (isDestroyable){
-
-    }
+    Tree(string name, Vector2 position, bool isDestroyable);
+    ~Tree();
 
 };
 

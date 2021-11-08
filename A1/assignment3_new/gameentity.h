@@ -7,6 +7,8 @@ struct Vector2 {
     double x, y;
 };
 
+Vector2 operator+(Vector2 p, Vector2 q);
+
 class GameEntity
 {
     friend class Game;
@@ -19,6 +21,7 @@ protected:
 
 public:
     GameEntity(string name, Vector2 position);
+    ~GameEntity();
 
     string getName() const{
         return m_name;

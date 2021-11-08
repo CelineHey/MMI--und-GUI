@@ -10,6 +10,7 @@ protected:
 
 public:
     DynamicGameEntity(string name, Vector2 position, int lifepoints);
+    ~DynamicGameEntity();
     int getLifepoints() const{
         return m_lifepoints;
     }

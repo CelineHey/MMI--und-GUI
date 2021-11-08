@@ -13,7 +13,8 @@ protected:
 
 public:
 
-    Rock(int sharpness, bool isDestroyable);
+    Rock(string name, Vector2 position, int sharpness, bool isDestroyable);
+    ~Rock();
 
     int getSharpness(){
         return m_sharpness;

@@ -11,6 +11,7 @@ class EvilRock : public Rock, public Enemy{
 public:
 
     EvilRock(string name, Vector2 position, int lifepoints, bool isDestroyable, int sharpness, double damagePerAttak);
+    ~EvilRock();
 };
 
 #endif // EVILROCK_H
