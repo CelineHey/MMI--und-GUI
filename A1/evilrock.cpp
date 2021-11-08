@@ -1,14 +1,11 @@
-#ifndef EVILROCK_H
-#define EVILROCK_H
-
+#include "evilrock.h"
 #include "rock.h"
 #include "enemy.h"
 
-EvilRock::EvilRock(int sharpness, double damagePerAttak) : Rock(sharpness) : Enemy(damagePerAttak += sharpness){
+EvilRock::EvilRock(int sharpness, double damagePerAttak) : Rock(sharpness) , Enemy(damagePerAttak += sharpness){
 
 
 
 
 }
 
-#endif // EVILROCK_H
