@@ -8,6 +8,7 @@ SOURCES += \
         enemy.cpp \
         evilrock.cpp \
         game.cpp \
+        gameentity.cpp \
         main.cpp \
         player.cpp \
         rock.cpp \
@@ -16,6 +17,7 @@ SOURCES += \
 
 HEADERS += \
     dynamicgameentity.h \
+    enemy.h \
     evilrock.h \
     game.h \
     gameentity.h \

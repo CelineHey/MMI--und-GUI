@@ -9,7 +9,7 @@ protected:
     int m_lifepoints;
 
 public:
-    DynamicGameEntity(string name, Vector2 position, int lifepoints)  : GameEntity (name, position), m_lifepoints(lifepoints) {
+    DynamicGameEntity(string name, Vector2 position, int lifepoints)  : GameEntity (name, position), m_lifepoints(lifepoints){
 
     }
     int getLifepoints() const {
@@ -18,6 +18,7 @@ public:
     void setLifepoints(int lifepoints){
         m_lifepoints= lifepoints;
     };
+
     void setPosition(double x, double y){
         m_position.x = x;
         m_position.y = y;
