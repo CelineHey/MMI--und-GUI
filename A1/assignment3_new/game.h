@@ -12,7 +12,7 @@ class Game {
 public:
     Vector2 changePosition(GameEntity& gameentity, Vector2 position);
 
-    void dealDamage(Enemy& enemy, Player& player);
+    int dealDamage(Enemy& enemy, Player& player);
 
     void heal(Player& player);
 };

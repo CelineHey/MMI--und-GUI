@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Player::Player(string name, Vector2 position,int const constValue, int lifepoints) : GameEntity(name, position), DynamicGameEntity(name, position,lifepoints), m_constValue(constValue){
+Player::Player(string name, Vector2 position,int const constValue, int lifepoints) : GameEntity(name, position), DynamicGameEntity(name, position,lifepoints += constValue), m_constValue(constValue){
 
 }
 Player::~Player(){
