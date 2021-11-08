@@ -11,9 +11,7 @@ protected:
     double m_damagePerAttack;
 
 public:
-    Enemy(int lifepoints, double damagePerAttack) : DynamicGameEntity(lifepoints), m_damagePerAttack(damagePerAttack) {
-
-    }
+    Enemy( int lifepoints, double damagePerAttack);
 
     double getDamagePerAttack(){
         return m_damagePerAttack;

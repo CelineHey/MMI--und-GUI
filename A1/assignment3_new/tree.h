@@ -1,6 +1,7 @@
 #ifndef TREE_H
 #define TREE_H
 #include "staticgameentity.h"
+#include <iostream>
 
 class Tree : public StaticGameEntity {
 

@@ -10,9 +10,7 @@ protected:
     bool m_isDestroyable;
 
 public:
-    StaticGameEntity(string name, Vector2 position, bool isDestroyable) : GameEntity (name, position), m_isDestroyable(isDestroyable){
-
-    }
+    StaticGameEntity(string name, Vector2 position, bool isDestroyable);
     bool getIsDestroyable() const{
         return m_isDestroyable;
     }

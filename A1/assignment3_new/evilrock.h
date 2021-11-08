@@ -10,9 +10,7 @@ class EvilRock : public Rock, public Enemy{
 
 public:
 
-    EvilRock(string name, Vector2 position, int lifepoints, bool isDestroyable, int sharpness, double damagePerAttak) : GameEntity(name, position), StaticGameEntity(isDestroyable) , DynamicGameEntity(lifepoints),  Rock(sharpness) , Enemy(damagePerAttak += sharpness){
-
-    }
+    EvilRock(string name, Vector2 position, int lifepoints, bool isDestroyable, int sharpness, double damagePerAttak);
 };
 
 #endif // EVILROCK_H

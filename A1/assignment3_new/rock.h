@@ -13,9 +13,7 @@ protected:
 
 public:
 
-    Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestroyable), m_sharpness(sharpness){
-
-    }
+    Rock(int sharpness, bool isDestroyable);
 
     int getSharpness(){
         return m_sharpness;
