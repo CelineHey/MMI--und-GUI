@@ -5,7 +5,7 @@
 class Tree : public StaticGameEntity {
 
 public:
-    Tree(bool isDestroyable): StaticGameEntity(isDestroyable){
+    Tree(bool isDestroyable): StaticGameEntity (isDestroyable){
 
     }
 

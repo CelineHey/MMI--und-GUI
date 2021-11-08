@@ -8,18 +8,18 @@ class Enemy : public virtual DynamicGameEntity{
 
 protected:
 
-    double m_damagePerAttak;
+    double m_damagePerAttack;
 
 public:
-    Enemy(int lifepoints, double damagePerAttak) : DynamicGameEntity(lifepoints), m_damagePerAttak(damagePerAttak) {
+    Enemy(int lifepoints, double damagePerAttack) : DynamicGameEntity(lifepoints), m_damagePerAttack(damagePerAttack) {
 
     }
 
-    double getDamagePerAttak(){
-        return m_damagePerAttak;
+    double getDamagePerAttack(){
+        return m_damagePerAttack;
     }
-    void setDamagePerAttak(double damagePerAttak){
-        m_damagePerAttak = damagePerAttak;
+    void setDamagePerAttack(double damagePerAttack){
+        m_damagePerAttack = damagePerAttack;
     }
 
 };

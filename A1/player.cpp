@@ -1,7 +1,8 @@
-#include "player.h"
-#include "dynamicgameentity.h"
+#include "gameentity.h"
 
 
-Player::Player(int const constValue, int lifepoints) :  DynamicGameEntity(lifepoints), constValue(constValue) {
-
+GameEntity::GameEntity(string name, Vector2 position)
+{
+    m_name = name;
+    m_position = position;
 }

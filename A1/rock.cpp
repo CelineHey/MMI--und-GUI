@@ -1,7 +1,8 @@
-#include "rock.h"
-#include "staticgameentity.h"
-
-Rock::Rock(int sharpness, bool isDestroyable) : StaticGameEntity(isDestroyable){
+#include "gameentity.h"
 
 
+GameEntity::GameEntity(string name, Vector2 position)
+{
+    m_name = name;
+    m_position = position;
 }

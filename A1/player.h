@@ -1,31 +1,37 @@
-#ifndef PLAYER_H
-#define PLAYER_H
-#include "dynamicgameentity.h"
+#ifndef GAMEENTITY_H
+#define GAMEENTITY_H
+#include <string>
+using namespace std;
 
-class Player : public DynamicGameEntity{
-
-    friend class game;
-
-private:
-    int const constValue;
-
-public:
-    Player(int const constValue, int lifepoints ) : DynamicGameEntity(lifepoints), constValue(constValue) {
-
-    }
-
-    int getConstValue() const {
-        return m_constValue;
-    }
-
-    void setConstValue(int const constValue){
-        m_constValue = constValue;
-    }
-
-    void setnewLifepoints(int lifepoints, int const constValue){
-        m_lifepoints + m_constValue = newLifepoints;
-
-
+struct Vector2 {
+    double x, y;
 };
 
-#endif // PLAYER_H
+class GameEntity
+{
+    friend class Game;
+
+protected:
+
+    string m_name;
+    Vector2 m_position;
+
+
+public:
+    GameEntity(string name, Vector2 position);
+
+    string getName() const{
+        return m_name;
+    }
+    Vector2 getPosition() const{
+        return m_position;
+    }
+    void setName(string name){
+        m_name = name;
+    }
+    void setPosition(Vector2 position){
+        m_position = position;
+    }
+};
+
+#endif // GAMEENTITY_H

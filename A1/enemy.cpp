@@ -1,7 +1,12 @@
+#include "evilrock.h"
+#include "rock.h"
 #include "enemy.h"
-#include "dynamicgameentity.h"
 
-Enemy::Enemy(int lifepoints, double damagePerAttak) : DynamicGameEntity(lifepoints), m_damagePerAttak(damagePerAttak){
+EvilRock::EvilRock(int sharpness, double damagePerAttak) : Rock(sharpness) , Enemy(damagePerAttak += sharpness){
+
+
 
 
 }
+
+

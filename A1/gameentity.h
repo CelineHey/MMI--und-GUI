@@ -4,15 +4,15 @@
 using namespace std;
 
 struct Vector2 {
-        double x, y;
-    };
+    double x, y;
+};
 
 class GameEntity
 {
     friend class Game;
 
 protected:
-    
+
     string m_name;
     Vector2 m_position;
 
