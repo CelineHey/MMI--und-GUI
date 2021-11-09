@@ -1,22 +1,27 @@
 #ifndef DVD_H
 #define DVD_H
 #include <stdbool.h>
-#include "medium"
+#include "medium.h"
 
 class Dvd : public Medium{
 
-private:
+protected:
 
     bool m_containsExtraDvd;
 
 public:
 
-    Dvd(char name[], bool containsExtraDvd) : Medium(containsExtraDvd){
+    Dvd();
+    Dvd(string name, bool containsExtraDvd) : Medium(name) , m_containsExtraDvd(containsExtraDvd){
 
     }
 
-    bool getContainsExtraDvd;
-    void setContainsExtraDvd(bool containsExtraDvd);
+    bool getContainsExtraDvd(){
+       return m_containsExtraDvd;
+    }
+    void setContainsExtraDvd(bool containsExtraDvd){
+        m_containsExtraDvd = containsExtraDvd;
+    };
 
 };
 

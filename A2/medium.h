@@ -1,21 +1,40 @@
 #ifndef MEDIUM_H
 #define MEDIUM_H
-#include "library"
+#include "floor.h"
+#include "customer.h"
+#include <string>
 
-class Medium : public Library{
+using namespace std;
 
-private:
+class Medium : public virtual Floor, public Customer{
 
-    char m_name[10];
+protected:
+
+    string m_name;
+    bool m_isBorrowed;
 
 public:
 
-    Medium(char name[]) : Library(){
+    Medium();
+    Medium(int number, int amountOfBorrowedMedia, string name, bool isBorrowed) : Floor(number), Customer(amountOfBorrowedMedia), m_name(name), m_isBorrowed(isBorrowed){
 
     }
 
-    char getName();
-    void setName(char name[]);
+
+
+
+public:
+
+    Medium(string name) : Library(){
+
+    }
+
+    string getName(){
+        return m_name;
+    }
+    void setName(string name){
+        m_name = name;
+    };
 
 };
 

@@ -1,23 +1,28 @@
 #ifndef BOOK_H
 #define BOOK_H
-#include "medium"
+#include "medium.h"
+#include "shelf.h"
 
 
-class Book : public Medium{
+class Book : public Medium, public Shelf{
 
-private:
-
+protected:
 
     int m_numberOfBookPages;
 
 public:
 
-    Book(char name[], int numberOfBookPages) : Medium(name[]){
+    Book();
+    Book(string name, string theme, int numberOfBookPages) : Medium(name), Shelf(theme), m_numberOfBookPages(numberOfBookPages){
 
     }
 
-    int getNumberOfBookPages();
-    void setNumberOfBookPages(int numberOfBookPages);
+    int getNumberOfBookPages(){
+        return m_numberOfBookPages;
+    }
+    void setNumberOfBookPages(int numberOfBookPages){
+        m_numberOfBookPages = numberOfBookPages;
+    };
 
 };
 
