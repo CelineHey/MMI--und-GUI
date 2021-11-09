@@ -2,4 +2,4 @@
 #include "building.h"
 
 Shelf::Shelf(){}
-Shelf::Shelf(int number, string theme) : Floor(number), m_theme(theme){}
+Shelf::Shelf(string nameOfLibrary, string location, time_t buildingOpeningHours, string type, int number, string theme) : Floor(nameOfLibrary, location, buildingOpeningHours, type, number), m_theme(theme){}

@@ -12,7 +12,7 @@ protected:
 public:
 
     Dvd();
-    Dvd(string name,string mediaName, int ID, int amountOfBorrowedMedia, string state, string nameOfLibrary, bool isBorrowed, int number);
+    Dvd(string name,string mediaName, int ID, int amountOfBorrowedMedia, string state, string nameOfLibrary, bool isBorrowed, int number, bool containsExtraDvD);
 
     bool getContainsExtraDvd(){
        return m_containsExtraDvd;

@@ -3,4 +3,4 @@
 #include "floor.h"
 
 Medium::Medium(){}
-Medium::Medium(string nameOfLibrary, string state, int ID, string name, time_t buildingOpeningHours, string location, string type, int number, int amountOfBorrowedMedia, string mediaName, bool isBorrowed) : Floor(nameOfLibrary, location, buildingOpeningHours, type, number), Customer(name, ID, amountOfBorrowedMedia, state, nameOfLibrary), m_mediaName(mediaName), m_isBorrowed(isBorrowed){}
+Medium::Medium(string nameOfLibrary, string type, string location, string state, int ID, string name, time_t buildingOpeningHours, int number, int amountOfBorrowedMedia, string mediaName, bool isBorrowed) : Library(nameOfLibrary), Building(nameOfLibrary,location, buildingOpeningHours, type), Customer(name, ID, amountOfBorrowedMedia, state, nameOfLibrary), {}

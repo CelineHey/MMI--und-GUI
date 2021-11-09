@@ -11,7 +11,7 @@ protected:
 public:
 
     Employee();
-    Employee(string name, string state, int ID, string typeOfJob);
+    Employee(string nameOfLibrary, string name, string state, int ID, string typeOfJob);
 
     string getTypeOfJob(){
         return m_typeOfJob;
