@@ -12,7 +12,7 @@ protected:
 public:
 
     Floor();
-    Floor(string location, time_t buildingOpeningHours, string type, int number);
+    Floor(string nameOfLibrary, string location, time_t buildingOpeningHours, string type, int number);
 
     int getNumber(){
         return m_number;

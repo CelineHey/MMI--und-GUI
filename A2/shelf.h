@@ -12,7 +12,7 @@ protected:
 
 public:
     Shelf();
-    Shelf(int number, string theme);
+    Shelf(string nameOfLibrary, string location, time_t buildingOpeningHours, string type, int number, string theme);
 
     string getTheme(){
         return m_theme;

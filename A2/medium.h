@@ -16,7 +16,7 @@ protected:
 public:
 
     Medium();
-    Medium(int number, int amountOfBorrowedMedia, string mediaName, bool isBorrowed);
+    Medium(string nameOfLibrary, string state, int ID, string name, time_t buildingOpeningHours, string location, string type, int number, int amountOfBorrowedMedia, string mediaName, bool isBorrowed);
 
 
     string getMediaName(){
