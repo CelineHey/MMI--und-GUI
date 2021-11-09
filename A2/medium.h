@@ -6,35 +6,31 @@
 
 using namespace std;
 
-class Medium : public virtual Floor, public Customer{
+class Medium : virtual public Floor, public Customer{
 
 protected:
 
-    string m_name;
+    string m_mediaName;
     bool m_isBorrowed;
 
 public:
 
     Medium();
-    Medium(int number, int amountOfBorrowedMedia, string name, bool isBorrowed) : Floor(number), Customer(amountOfBorrowedMedia), m_name(name), m_isBorrowed(isBorrowed){
+    Medium(int number, int amountOfBorrowedMedia, string mediaName, bool isBorrowed);
 
+
+    string getMediaName(){
+        return m_mediaName;
     }
-
-
-
-
-public:
-
-    Medium(string name) : Library(){
-
-    }
-
-    string getName(){
-        return m_name;
-    }
-    void setName(string name){
-        m_name = name;
+    void setName(string mediaName){
+        m_mediaName = mediaName;
     };
+    bool getIsBorrowed(){
+        return m_isBorrowed;
+    }
+    void setIsBorrowed(bool isBorrowed){
+        m_isBorrowed = isBorrowed;
+    }
 
 };
 

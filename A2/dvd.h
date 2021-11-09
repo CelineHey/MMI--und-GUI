@@ -12,9 +12,7 @@ protected:
 public:
 
     Dvd();
-    Dvd(string name, bool containsExtraDvd) : Medium(name) , m_containsExtraDvd(containsExtraDvd){
-
-    }
+    Dvd(string name,string mediaName, int ID, int amountOfBorrowedMedia, string state, string nameOfLibrary, bool isBorrowed, int number);
 
     bool getContainsExtraDvd(){
        return m_containsExtraDvd;

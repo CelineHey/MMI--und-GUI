@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Building : public virtual Library {
+class Building : virtual public Library {
 
 protected:
     string m_location;
@@ -16,12 +16,25 @@ protected:
   public:
 
     Building();
-    Building(string nameOfLibrary, string location, time_t buildingOpeningHours, string type) : Library(nameOfLibrary), m_location(location), m_buildingOpeningHours(buildingOpeningHours), m_type(type){
-
-    }
+    Building(string nameOfLibrary, string location, time_t buildingOpeningHours, string type);
 
     string getLocation(){
         return m_location;
+    }
+    void setLocation(string location){
+        m_location = location;
+    }
+    time_t getBuildingOpeningHours(){
+        return m_buildingOpeningHours;
+    }
+    void setBuildingOpeningHours( time_t buildingOpendingHours){
+        m_buildingOpeningHours = buildingOpendingHours;
+    }
+    string getType(){
+        return m_type;
+    }
+    void setType(string type){
+        m_type = type;
     }
 };
 

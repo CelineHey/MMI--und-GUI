@@ -13,9 +13,7 @@ protected:
 public:
 
     Book();
-    Book(string name, string theme, int numberOfBookPages) : Medium(name), Shelf(theme), m_numberOfBookPages(numberOfBookPages){
-
-    }
+    Book(string name, bool isBorrowed, string theme,int numberOfBookPages,int number, int amountOfBorrowedMedia);
 
     int getNumberOfBookPages(){
         return m_numberOfBookPages;

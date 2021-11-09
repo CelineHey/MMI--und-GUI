@@ -13,10 +13,14 @@ protected:
 public:
 
     Library();
-    Library(string nameOfLibrary) : m_nameOfLibrary(nameOfLibrary){
+    Library(string nameOfLibrary);
+
+    string getNameOfLibrary(){
+        return m_nameOfLibrary;
     }
-
-
+    void setNameOfLibrary(string nameOfLibrary){
+        m_nameOfLibrary = nameOfLibrary;
+    }
 };
 
 #endif // LIBRARY_H

@@ -11,9 +11,7 @@ protected:
 public:
 
     Cd();
-    Cd(string name, bool isBorrowed, int numberOfSongs) : Medium(name,isBorrowed), m_numberOfSongs(numberOfSongs){
-
-    }
+    Cd(string name, bool isBorrowed, int numberOfSongs, int number, int amountOfBorrowedMedia);
 
     int getNumberOfSongs(){
         return m_numberOfSongs;

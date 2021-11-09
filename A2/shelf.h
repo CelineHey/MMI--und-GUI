@@ -5,15 +5,20 @@
 
 using namespace std;
 
-class Shelf : public virtual Floor {
+class Shelf : virtual public Floor {
 
 protected:
     string m_theme;
 
 public:
     Shelf();
-    Shelf(int number, string theme) : Floor(number), m_theme(theme){
+    Shelf(int number, string theme);
 
+    string getTheme(){
+        return m_theme;
+    }
+    void setTheme(string theme){
+        m_theme = theme;
     }
 };
 

@@ -2,7 +2,7 @@
 #define CUSTOMER_H
 #include "people.h"
 
-class Customer : public virtual People {
+class Customer : virtual public People {
 
 protected:
     int m_amountOfBorrowedMedia;
@@ -10,8 +10,13 @@ protected:
 public:
 
     Customer();
-    Customer(string name, int ID, int amountOfBorrowedMedia) : People(name, ID), m_amountOfBorrowedMedia(amountOfBorrowedMedia){
+    Customer(string name, int ID, int amountOfBorrowedMedia, int state, int nameOfLibrary);
 
+    int getAmountOfBorrowedMedia(){
+        return m_amountOfBorrowedMedia;
+    }
+    void setAmountOfBorrowedMedia(int amountOfBorrowedMedia){
+        m_amountOfBorrowedMedia = amountOfBorrowedMedia;
     }
 
 

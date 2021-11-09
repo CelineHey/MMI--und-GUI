@@ -11,11 +11,14 @@ protected:
 public:
 
     Employee();
-    Employee(string name, int ID, string typeOfJob): People(name, ID) , m_typeOfJob(typeOfJob){
+    Employee(string name, int ID, string typeOfJob);
 
+    string getTypeOfJob(){
+        return m_typeOfJob;
     }
-
-
+    void setTypeOfJob(string typeOfJob){
+        m_typeOfJob = typeOfJob;
+    }
 
 };
 
